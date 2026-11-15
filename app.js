@@ -52,3 +52,17 @@ function renderAdmin(){
  document.querySelector('#saveTariffs').onclick=()=>{const next=tariffs();document.querySelectorAll('[data-category][data-field]').forEach(el=>{const n=Number(el.value);if(!Number.isFinite(n)||n<0)return;next[el.dataset.category][el.dataset.field]=n});write('tariffs_v9',next);alert('حفظت الأسعار على هذا الجهاز فقط')};
  document.querySelector('#resetTariffs').onclick=()=>{localStorage.removeItem('wasalni_v2_tariffs_v9');renderAdmin()};
 }
+
+// V9.1: bootstrap all three interfaces. Without this call the page remains blank.
+function startWasalni() {
+  try {
+    if (!app) throw new Error('Missing application container');
+    if (role === 'admin') renderAdmin();
+    else if (role === 'driver') renderDriver();
+    else renderCustomer();
+  } catch (error) {
+    console.error('Wasalni startup error:', error);
+    if (app) app.innerHTML = '<main style="direction:rtl;font-family:system-ui;padding:24px"><h2>تعذر تشغيل وصلني</h2><p>حدث خطأ في تحميل الواجهة. يرجى تحديث الصفحة.</p></main>';
+  }
+}
+startWasalni();
