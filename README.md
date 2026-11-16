@@ -1,12 +1,1 @@
-# وصلني WASLNY — V16 Visual Reference Match
-
-واجهة زبون محدثة تستخدم مشاهد مأخوذة من الصورة المرجعية التي زود بها المستخدم، بدل رسومات SVG السابقة. المظهر الداكن هو الافتراضي، ويمكن تغيير المظهر إلى الفاتح من الإعدادات.
-
-## حدود النسخة
-هذه نسخة تجريبية للواجهة فقط. لا يوجد إرسال SMS حقيقي، ولا قاعدة بيانات مشتركة، ولا طلب تكسي يصل إلى كابتن فعلي، ولا مدفوعات حقيقية.
-
-## النشر
-فك الضغط وارفع الملفات والمجلد `assets` بالكامل إلى جذر مستودع GitHub Pages. تم تغيير أسماء ملفات CSS/JS لتفادي الذاكرة المؤقتة.
-
-## فحوص
-تم فحص صياغة JavaScript ووجود الموارد وسلامة ZIP. تعذر اختبار العرض في Chromium بسبب حظر فتح الصفحات المحلية في بيئة التنفيذ؛ لذلك لا ندعي مطابقة بصرية تامة.
+WASLNY V17 — visual and fare fix. Upload all files including assets. Fare estimate based on road distance via public OSRM when available, otherwise approximate straight-line distance x1.35; not a final tariff. No real booking, SMS or driver dispatch. Open index.html/customer.html.
