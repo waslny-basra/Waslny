@@ -1,1 +1,1 @@
-WASLNY V17 — visual and fare fix. Upload all files including assets. Fare estimate based on road distance via public OSRM when available, otherwise approximate straight-line distance x1.35; not a final tariff. No real booking, SMS or driver dispatch. Open index.html/customer.html.
+WASLNY V18 — واجهة رئيسية واحدة، بحث أسماء الأماكن عبر OpenStreetMap Nominatim، تحديد الانطلاق والوجهة من نتائج البحث، عرض المسار والسعر التقديري حسب نوع السيارة. يحتاج اتصال إنترنت. طلب التكسي محلي تجريبي ولا يصل لكابتن. OTP غير مفعل.
