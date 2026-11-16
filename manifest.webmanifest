@@ -1,1 +1,17 @@
-{"name":"وصلني - تكسي البصرة","short_name":"وصلني","start_url":"./customer.html","scope":"./","display":"standalone","background_color":"#f7f9f8","theme_color":"#07545c","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+{
+  "name": "وصلني WASLNY V15",
+  "short_name": "وصلني",
+  "start_url": "./index.html?v=15",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f9f8",
+  "theme_color": "#061631",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
